@@ -1,0 +1,47 @@
+ <div>
+    <div id="id_ide_split_panes">
+
+      
+        <div id="id_editor">
+alembic==0.9.10
+click==6.7
+Flask==1.0.2
+Flask-Login==0.4.1
+Flask-Migrate==2.2.1
+Flask-SQLAlchemy==2.3.2
+itsdangerous==0.24
+Jinja2==2.10
+Mako==1.0.7
+MarkupSafe==1.0
+mysql-connector-python==8.0.11
+protobuf==3.6.0
+python-dateutil==2.7.3
+python-editor==1.0.3
+six==1.11.0
+SQLAlchemy==1.2.9
+Werkzeug==0.14.1
+</div>
+      
+
+      <div id="id_ide_console">
+        
+          <div id="id_ide_console_pane_buttons">
+            <center>
+              
+                <p>This is not a Python file, you can't run it here.</p>
+              
+            </center>
+          </div>
+          <iframe style="display: none" id="id_console" name="console" class="soft_keyboard_sensitive">
+          </iframe>
+          <div style="display: none;" class="console_limit_reached">
+            <div class="container">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-3 well">
+            <h1>Console limit reached :-/</h1>
+
+            <p>
+            With your current PythonAnywhere account you can have up to
+            2 consoles.  You can
+            have more if you
+            <a href="/user/busterposey/account/">upgrade your account</a>!
