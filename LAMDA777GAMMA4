@@ -1,0 +1,69 @@
+  <div class="container">
+            
+                <div class="row" style="margin-bottom: 1ex">
+                    <div>
+                        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    </div>
+                    <div>
+                        <small>
+                            Posted
+                            
+                                at an unknown time
+                            
+                            by
+                            
+                                anonymous
+                            
+                        </small>
+                    </div>
+                </div>
+            
+                <div class="row" style="margin-bottom: 1ex">
+                    <div>
+                        zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+                    </div>
+                    <div>
+                        <small>
+                            Posted
+                            
+                                at an unknown time
+                            
+                            by
+                            
+                                anonymous
+                            
+                        </small>
+                    </div>
+                </div>
+            
+                <div class="row" style="margin-bottom: 1ex">
+                    <div>
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                    </div>
+                    <div>
+                        <small>
+                            Posted
+                            
+                                at an unknown time
+                            
+                            by
+                            
+                                anonymous
+                            
+                        </small>
+                    </div>
+                </div>
+            
+
+            
+                <div class="row">
+                    <form action="." method="POST">
+                        <textarea name="contents" placeholder="Enter a comment" class="form-control"></textarea>
+                        <input type="submit" class="btn btn-success" value="Post comment">
+                    </form>
+                </div>
+            
+        </div><!-- /.container -->
+
+    </body>
+</html>
