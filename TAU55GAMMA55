@@ -1,0 +1,42 @@
+ <div class="row" style="margin-bottom: 1ex">
+                    <div>
+                        GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+                    </div>
+                    <div>
+                        <small>
+                            Posted
+                            
+                                Thursday, 12 July 2018 at 00:16
+                            
+                            by
+                            
+                                nigeldodds34
+                            
+                        </small>
+                    </div>
+                </div>
+            
+                <div class="row" style="margin-bottom: 1ex">
+                    <div>
+                        &lt;link rel=&#34;stylesheet&#34; href=&#34;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css&#34; integrity=&#34;sha512-
+                    </div>
+                    <div>
+                        <small>
+                            Posted
+                            
+                                Thursday, 12 July 2018 at 00:16
+                            
+                            by
+                            
+                                nigeldodds34
+                            
+                        </small>
+                    </div>
+                </div>
+            
+
+            
+                <div class="row">
+                    <form action="." method="POST">
+                        <textarea name="contents" placeholder="Enter a comment" class="form-control"></textarea>
+                        <input type="submit" class="btn btn-success" value="Post comment">
