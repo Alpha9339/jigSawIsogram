@@ -1,0 +1,28 @@
+ <div class="gravatar-form">      <img src="https://warehouse-camo.cmh1.psfhosted.org/9b93c41a94b67d1815a5724da2ba1c5ad0c5ffaf
+ /68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f613561643030393962623333363634343434623461363661333837
+ 31393239663f73697a653d313430" alt="Avatar for busterposey from gravatar.com" title="Avatar for busterposey from gravatar.com"
+ class="gravatar-form__image">      <div class="gravatar-form__content">        <p>        We use <a href="https://gravatar.com/"
+ >gravatar.com</a> to generate your profile picture based on your primary email address — <code class="break-on-mobile"
+ >bserv3425@gmail.com</code>        </p>        <a href="https://gravatar.com/a5ad0099bb33664444b4a66a3871929f" target="_blank"
+ rel="noopener" class="button">          Change image<span class="hide-on-mobile"> on gravatar.com</span>          
+ <i class="fa fa-external-link-alt" aria-hidden="true"></i>          <span class="sr-only">Opens in new window</span>       
+ </a>      </div>    </div> 
+ </section>  <hr>
+ </br>
+ <section id="account-details">    <h2 class="sub-title">Account details</h2>    <div class="form-group">      
+ <span class="form-group__label">Username</span>      <p class="form-group__text">busterposey</p>      
+ <p class="form-group__help-text">Displayed on your <a href="/user/busterposey/">public profile</a>. Cannot be changed.</p>  
+ </div>    <form method="POST">      <input name="csrf_token" type="hidden" value="izQAC74rWSveH5_O7iPn-ABhYVDXYlGyi6P6lAeASW4">            
+ <div class="form-group">        <label class="form-group__label" for="name">Full name</label>        
+ <input class="form-group__input" id="name" name="name" placeholder="No name set" type="text" value="busterposey">                 
+ <p class="form-group__help-text">Displayed on your <a href="/user/busterposey/">public profile</a></p>      </div>     
+ <input value="Update account" class="button button--primary" type="submit">    </form>  </section>
+ </br>
+   <p>Confirm your username to continue.</p>                <label for="confirm_username">Username</label>        
+   <input name="confirm_username" data-action="input->confirm#check" data-target="confirm.input" type="text"
+   autocomplete="off" autocorrect="off" autocapitalize="off">        </div>        <div class="modal__footer">         
+   <button type="reset" class="button modal__action js-cancel" data-action="click->confirm#cancel">Cancel</button>         
+   <button class="button button--danger modal__action js-confirm" data-target="confirm.button" data-expected="busterposey" 
+   type="submit">            Delete your PyPI account          </button>        </div>      </form>    </div>  </div>
+   
+
