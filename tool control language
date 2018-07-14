@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>expect(1) - Linux man page</title>
+<base href="https://linux.die.net/man/1/expect">
+<link rel="canonical" href="https://linux.die.net/man/1/expect">
+<link rel="stylesheet" type="text/css" href="/style/white.css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script type="text/javascript">
+<!--
+var _gaq = _gaq || [];_gaq.push(['_setAccount', 'UA-50820-6']);_gaq.push(['_trackPageview']);
+window.google_analytics_uacct = 'UA-50820-6';
+// -->
+</script>
+</head>
+
+<body>
+<div id=bg>
+<div id=logo>
+<a href="https://www.die.net/"><img
+src="/style/logo.svg" alt="die.net" width=120 height=120
+onerror="this.onerror=null; this.src='/style/logo.png'"></a>
+</div>
+<div id=content>
+
+<!-- google_ad_section_start -->
+<h1>expect(1) - Linux man page</h1>
+
+<h2>Name</h2>
+expect - programmed dialogue with interactive programs, Version 5
+<h2>Synopsis</h2>
+<b>expect</b> [ <b>-dDinN</b> ] [ <b>-c</b> <i>cmds</i> ] [ [ <b>-</b>[<b>f</b>|<b>b</b>] ]
+<i>cmdfile</i> ] [ <i>args</i> ]
+<h2>Introduction</h2>
+<div id=adright>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-5823754184406795"
+     data-ad-slot="7130739364"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<b>Expect</b> is a program that "talks" to other interactive programs according to a script.
+Following the script, <b>Expect</b> knows what can be expected from a program and what the correct response should be. An interpreted language provides
+branching and high-level control structures to direct the dialogue. In addition, the user can take control and interact directly when desired, afterward
+returning control to the script.
+<p><b>Expectk</b> is a mixture of <b>Expect</b> and <b>Tk</b>. It behaves just like <b>Expect</b> and <b>Tk</b>'s <b>wish</b>. <b>Expect</b> can also be used
+directly in C or C++ (that is, without Tcl). See <i><b><a href="/man/3/libexpect">libexpect</a></b>(3)</i>.
