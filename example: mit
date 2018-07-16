@@ -1,0 +1,49 @@
+>The AWK language was named after its authors, Al Aho, Peter Weinberger and Brian Kernighan. </p>
+<p><b>Examples</b></p>
+<p>From an <a href="ls.html">ls - l</a> listing, return the fifth item ($5) from each line of the output: </p>
+<p class="code">$ ls -l | awk '{print $5}' </p>
+<p>Print the Row Number (NR), then a dash and space <span class="code">(&quot;- &quot;</span>) and then the first item ($1) from each line in samplefile.txt: </p>
+<p class="code">$ awk '{print NR &quot;- &quot; $1 }' samplefile.txt</p>
+<p>Print the first item ($1) and then the third last item<span class="code"> $(NF-2)</span> from each line in samplefile.txt: </p>
+<p class="code">$ awk '{print $1, $(NF-2) }' samplefile.txt</p>
+<p>Print every line that has at least one field. This is an easy way to delete blank lines from a file (or rather, to<br>
+create a new file similar to the old file but from which the blank lines have been deleted)</p>
+<pre> awk 'NF > 0' data.txt</pre>
+<p>Comparison with <a href="grep.html">grep</a>:</p>
+<blockquote>
+<p>Running <span class="code">grep Dec</span> against the following file listing would return the 3 rows shown in bold as it matches text in different places: </p>
+<p><span class="code">-rw-r--r-- 7 simon simon 12043 Jan 31 09:36 <b>Dec</b>ember.pdf<br>
+-rw-r--r-- 3 simon simon 1024 <b>Dec</b> 01 11:59 README<br>
+-rw-r--r-- 3 simon simon 5096 Nov 14 18:22 <b>Dec</b>ision.txt </span></p>
+<p>Running <span class="code">awk '$6 == &quot;Dec&quot;'</span>against the same file listing, the relational operator $6 matches the exact field (column 6 = Month) so it will list only the December file:</p>
+<p class="code"> $ ls -l /tmp/demo | awk '$6 == &quot;Dec&quot;'</p>
+</blockquote>
+<p>Print the length of the longest input line: </p>
+<pre> awk '{ if (length($0) > max) max = length($0) }
+      END { print max }' data
+</pre>
+<p>Print seven random numbers from zero to 100,
+inclusive:</p>
+<pre> awk 'BEGIN { for (i = 1; i <= 7; i++)
+                print int(101 * rand()) }'
+</pre>
+<p>Print the total number of bytes used by <i>FILES</i>:</p>
+<pre> ls -lg <i>FILES</i> | awk '{ x += $5 } ; END { print "total bytes: " x }'
+</pre>
+<p>Print the average file size of all .PNG files within a directory:</p>
+<pre> ls -l *.png | gawk '{sum += $5; n++;} END {print sum/n;}' </pre>
+<p>  Print a sorted list of the login names of all users:</p>
+<pre> awk -F: '{ print $1 }' /etc/passwd | sort</pre>
+<p> Count the lines in a file:</p>
+<pre> awk 'END { print NR }' data</pre>
+<p>  Print the even numbered lines in the data file.  If you were to use the expression <span class="code">'NR % 2 == 1'</span> instead, it would
+print the odd numbered lines.</p>
+<pre> awk 'NR % 2 == 0' data</pre>
+<p class="quote"><i>&ldquo;When the Last of the Great Auks Died, It Was by the Crush of a Fisherman’s Boot&rdquo; ~ Samantha Galasso (<a href="https://www.smithsonianmag.com/smithsonian-institution/with-crush-fisherman-boot-the-last-great-auks-died-180951982/">Smithsonian</a>)</i></p>
+<p><b>Related:</b></p>
+<p><a href="https://www.cs.princeton.edu/courses/archive/spr08/cos333/awk.help">AWK Help page</a> - Brian Kernighan<br>
+<a href="https://gregable.com/2010/09/why-you-should-know-just-little-awk.html">Why you should learn just a little Awk</a> - Gregable<br>
+<a href="http://www.grymoire.com/Unix/Awk.html">AWK tutorial and introduction</a> - Bruce Barnett<br>
+<a href="https://github.com/learnbyexample/Command-line-text-processing/blob/master/gnu_awk.md">Learn By Example</a> - AWK text processing<br>
+<a href="https://www.gnu.org/software/gawk/manual/gawk.html">GNU Awk User Guide</a> - Full guide with examples.<br>
+Book: <a href="https://archive.org/download/pdfy-MgN0H1joIoDVoIC7/The_AWK_Programming_Language.pdf">The Awk Programming Language</a>(pdf) 1988, Archive.org by <b>A</b>ho, <b>K</b>ernighan, and <b>W</b>einberger<br>
